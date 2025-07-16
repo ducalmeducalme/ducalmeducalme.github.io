@@ -1,0 +1,289 @@
+body {
+  /*padding-left: 50px;
+  padding-top: 50px;*/
+  background-color: black;
+  color: yellow;
+  /*font-family: 'Univers LT Std Extra Black Extended', monospace;*/
+  /*font-family: 'New Alphabet', Courier, monospace;*/
+  /*font-family: 'Courier', monospace;*/
+  /*font-family: 'Helvetica', Courier, monospace;*/
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12pt;
+  /*width: 800px;*/
+  border-color: yellow;
+  border-width: 0px;
+  border-style: solid;
+  max-width: 600px;
+  margin: auto;
+}
+
+hr {
+color: yellow;
+style: dashed;
+}
+
+div.article {
+  font-family: 'Univers LT Std', Courier, monospace;
+  /*font-family: 'New Alphabet', Courier, monospace;*/
+  /*font-family: 'Courier New','Univers LT Std', Courier, monospace;*/
+  font-weight: normal;
+  font-style: normal;
+  
+  font-size: 0.9em;
+  border-right-width: 0.1em;
+  border-left-width: 0.1em;
+  border-top-width: 5px;
+  border-bottom-width: 0.1em;
+  
+  border-color: yellow;
+  border-style: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+article {
+	line-height: auto;
+}
+
+.ProtoSans56 {
+	font-family: ProtoSans56;
+  font-size: 1.45em;
+}
+
+.ProtoSans35 {
+	font-family: ProtoSans35;
+  font-size: 1.45em;
+}
+
+li.article {
+    text-align: start;
+}
+
+img.logo {
+  padding-bottom: 0px;
+  display: inline-block;
+  position: relative;
+  max-width: auto;
+}
+
+article img, video{
+max-width: 100%;
+height: auto;
+display: grid;
+justify-content: center;
+align-items: center;     
+}
+
+a.logo {
+  font-family: ProtoSans56;
+  font-style: normal;
+  font-size: 2em;
+  color: yellow;
+}
+
+header a:link, a:visited {
+  text-decoration: none;
+}
+
+.frame {
+  border-width: 1px;
+  border-color: yellow;
+  border-style: dashed;
+}
+
+article h1 {
+  color: yellow;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+button {
+  background-color: black;
+  font: 'Courier New';
+}
+
+section {
+  flex-direction: inline;
+  color: white;
+  background-color: grey;
+}
+
+P {
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+  color: yellow;
+  background-color: black;
+}
+
+P.caption {
+display: grid;
+font-family: 'Univers LT std', Courier, monospace;
+font-size: 10pt;
+font-weight: 300;
+font-style: italic;
+margin-top: 0em;
+padding-top: 0em;
+}
+
+P.caption text {
+border-color: yellow;
+border-style: solid;
+border-bottom: 1px;
+}
+
+
+}
+table {
+  color: yellow;
+  background-color: black;
+  border-color: yellow;
+  border: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px dashed yellow;
+  border-color: yellow;
+  padding: 8px 10px;
+}
+
+ul.menu {
+  list-style: none;
+  display: inline-flex;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+ul.pad {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  display: inline-flex;
+}
+
+ul.list {
+  list-style: none;
+  display: grid;
+}
+
+li.sidelist {
+  display: inline-block;
+}
+
+li.left_pad {
+  display: list-item;
+}
+
+li.menu {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+li.menu text {
+  position: relative;
+}
+
+li.menu:first-child {
+  padding-left: 0em;
+  padding-bottom: 0em;
+  margin-bottom:  0em;
+}
+
+header button {
+  font-family: ProtoSans56;
+  font-size: small;
+  /*display: table-row;*/
+  height: 1.75em;
+  width: auto;
+
+  /*padding-top: 5px;*/
+  padding-bottom: 0em;
+  /*padding-left: 50px;*/
+  padding-left: 8px;
+  padding-right: 8px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  /*margin-bottom: 0.4em;*/
+
+  border-left-width: 0.15em;
+  border-right-width: 0.15em;
+  border-top-width: 0.15em;
+  border-bottom-width: 0.0em;
+
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 0em;
+
+  border-style: solid;
+  background-color: black;
+  border-color: yellow;
+  color: yellow;
+}
+
+header button:hover {
+  background-color: yellow;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+div.top_pad {
+  display: block;
+  padding-top: 0px;  
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-color: yellow;
+  border-style: solid;
+  
+}
+
+header p{
+font-family: 'Univers LT Std', Courier, monospace;
+font-size: 11pt;
+font-weight: 300;
+font-style: italic;
+
+margin-bottom: 1em;
+margin-top: 0em;
+}
+
+header {
+margin-top: 1.5em;
+text-align: center;
+align-content: center;
+}
+
+div.left_pad {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2px;
+  /*padding-bottom: 10%;*/
+  padding-right: 0.5em;
+  padding-left: 0em;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 4px;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-color: yellow;
+  border-style: solid;  
+  margin-right: 2em;
+  /*padding-bottom: 100px;*/
+}
+
+footer {
+margin-top: 3em;
+margin-bottom: 3em;
+text-align: center;
+}
