@@ -30,7 +30,8 @@ div.article {
   font-weight: normal;
   font-style: normal;
   
-  font-size: 0.9em;
+  font-size: 12pt;
+  line-height: normal;
   border-right-width: 0.1em;
   border-left-width: 0.1em;
   border-top-width: 5px;
@@ -49,13 +50,11 @@ article {
 }
 
 .ProtoSans56 {
-	font-family: ProtoSans56;
-  font-size: 1.45em;
+font-family: ProtoSans56;
 }
 
 .ProtoSans35 {
-	font-family: ProtoSans35;
-  font-size: 1.45em;
+font-family: ProtoSans35;
 }
 
 li.article {
@@ -96,7 +95,7 @@ header a:link, a:visited {
 
 article h1 {
   color: yellow;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 2em;
 }
 
