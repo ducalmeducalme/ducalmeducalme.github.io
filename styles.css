@@ -29,7 +29,7 @@ div.article {
 /*font-family: 'Univers LT Std', Courier, monospace;*/
 /*font-family: 'New Alphabet', Courier, monospace;*/
 /*font-family: 'Courier New','Univers LT Std', Courier, monospace;*/
-font-family: 'Univers LT Std', Courier, monospace;
+font-family: 'Arial', Courier, monospace;
   font-style: normal;
   font-stretch: normal;
   font-size: 14pt;
@@ -85,6 +85,8 @@ max-width: 100%;
 height: auto;
 display: block;
 margin: auto;
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 .logo {
@@ -99,9 +101,14 @@ header a:link, a:visited {
 }
 
 .frame {
-  border-width: 1px;
+  border-width: 5px;
   border-color: yellow;
-  border-style: dashed;
+  border-style: solid;
+}
+
+.frame img {
+margin: auto;
+margin-top: 1em;
 }
 
 article h1 {
@@ -112,7 +119,7 @@ article h1 {
 
 button {
   background-color: black;
-  font: 'Courier New';
+  font-family: 'Courier New';
 }
 
 section {
@@ -140,17 +147,27 @@ padding-top: 0em;
 }
 
 div.caption_column {
-font-family: 'New Alphabet', Courier, monospace;
-font-size: 7.2pt;
-font-weight: 300;
+/*font-family: 'New Alphabet', Courier, monospace;*/
+/*font-family: 'Univers LT std';*/
+font-family: Arial;
+/*font-size: 7.2pt;*/
+font-size: 12px;
+font-weight: normal;
+background-color: yellow;
+color: black;
 
 margin-top: 1em;
+margin-bottom: 1em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
 
 column-count: 2;
 column-gap: 1rem;
 column-rule-style: solid;
-column-rule-width: 1px;
-column-rule-color: yellow;
+column-rule-width: 5px;
+column-rule-color: black;
 }
 
 .font_spread {
