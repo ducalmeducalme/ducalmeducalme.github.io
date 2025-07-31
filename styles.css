@@ -23,7 +23,6 @@ text-wrap: wrap;
 
 hr {
 color: yellow;
-style: dashed;
 }
 
 div.article {
@@ -48,12 +47,15 @@ font-family: 'Univers LT Std', Courier, monospace;
   padding-bottom: 20px;
   padding-top: 10px;
   text-wrap: wrap;
-  justify-content: center;
+  justify-content: justify;
   text-align: justify;
   hyphens: auto;
     max-width: 600px;
   margin: auto;
+  display: flex;
 }
+
+
 
 article {
 	line-height: auto;
@@ -78,15 +80,14 @@ img.logo {
   max-width: auto;
 }
 
-article img, video{
+.article img, video{
 max-width: 100%;
 height: auto;
-display: grid;
-justify-content: center;
-align-items: center;   
+display: block;
+margin: auto;
 }
 
-a.logo {
+.logo {
   font-family: ProtoSans56;
   font-style: normal;
   font-size: 2em;
@@ -104,8 +105,8 @@ header a:link, a:visited {
 }
 
 article h1 {
-  color: yellow;
-  font-weight: bold;
+  /*color: yellow;*/
+  /*font-weight: bold;*/
   font-size: 2em;
 }
 
@@ -199,7 +200,8 @@ td {
 
 ul.menu {
   list-style: none;
-  display: inline-flex;
+  display: inline-block;
+  font-size: 0px;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
 }
@@ -225,12 +227,9 @@ li.left_pad {
 
 li.menu {
   display: inline-flex;
+  font-size: 0px;
   margin: 0px;
   padding: 0px;
-}
-
-li.menu text {
-  position: relative;
 }
 
 li.menu:first-child {
