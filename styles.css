@@ -3,13 +3,10 @@ body {
   padding-top: 50px;*/
   background-color: black;
   color: yellow;
-  font-family: 'Univers LT Std', Courier, monospace;
-  /*font-family: 'New Alphabet', Courier, monospace;*/
-  /*font-family: 'Arial', Courier, monospace;*/
+  font-family: 'Arial', Courier, monospace;
   font-weight: normal;
   font-style: normal;
   font-size: 12pt;
-  /*width: 800px;*/
   border-color: yellow;
   border-width: 0px;
   border-style: solid;
@@ -23,17 +20,13 @@ text-wrap: wrap;
 
 hr {
 color: yellow;
+height: 5px;
+background: yellow;
+border: none;
 }
 
 div.article {
-/*font-family: 'Univers LT Std', Courier, monospace;*/
-/*font-family: 'New Alphabet', Courier, monospace;*/
-/*font-family: 'Courier New','Univers LT Std', Courier, monospace;*/
-font-family: 'Arial', Courier, monospace;
-  font-style: normal;
-  font-stretch: normal;
   font-size: 14pt;
-  /*font-weight: normal;*/	
   line-height: 1.5;
   border-right-width: 0em;
   border-left-width: 0em;
@@ -42,17 +35,19 @@ font-family: 'Arial', Courier, monospace;
   
   border-color: yellow;
   border-style: solid;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
   text-wrap: wrap;
   justify-content: justify;
   text-align: justify;
   hyphens: auto;
-    max-width: 600px;
+  max-width: 600px;
+  width: auto;
   margin: auto;
   display: flex;
+  
 }
 
 
@@ -147,24 +142,21 @@ padding-top: 0em;
 }
 
 div.caption_column {
-/*font-family: 'New Alphabet', Courier, monospace;*/
-/*font-family: 'Univers LT std';*/
 font-family: Arial;
-/*font-size: 7.2pt;*/
-font-size: 12px;
+font-size: 9pt;
 font-weight: normal;
 background-color: yellow;
 color: black;
 
 margin-top: 1em;
 margin-bottom: 1em;
-padding-left: 0.5em;
-padding-right: 0.5em;
+padding-left: 1em;
+padding-right: 1em;
 padding-top: 0.5em;
 padding-bottom: 0.5em;
 
 column-count: 2;
-column-gap: 1rem;
+column-gap: 2em;
 column-rule-style: solid;
 column-rule-width: 5px;
 column-rule-color: black;
@@ -172,19 +164,23 @@ column-rule-color: black;
 
 .font_spread {
 list-style: none; 
-display: inline; 
+display: grid; 
+width: auto;
 max-width: auto;
+grid-auto-flow: row;
 }
 
 .font_spread ul{
 list-style: inherit; 
-display: inline-flex;
+display: grid;
+grid-auto-flow: column;
 padding-bottom: 2cm;
 padding-right: 2cm;
 }
 
 .font_spread ul li{
-max-width: 50%;
+width: auto;
+max-width: auto;
 text-align: justify;
 hyphens: auto;
 margin-left: 2cm;
@@ -196,7 +192,32 @@ margin-bottom: 1cm;
 }
 
 .font_spread ul li:first-child{
-max-width: 60%;
+width: auto;
+max-width: auto;
+}
+
+.wide_page {
+margin-top: 1cm;
+margin-left: 2cm;
+margin-right: 2cm;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+align-content: start;
+gap: 2em;
+}
+
+.wide_page div {
+width: 10cm;
+padding: 0px;
+margin: 0px;
+}
+
+.wide_page P {
+width: 800px;
+  text-align: justify;
+  justify-content: center;
 }
 
 table {
@@ -217,8 +238,8 @@ td {
 
 ul.menu {
   list-style: none;
-  display: inline-flex;
-  
+  display: inline flex;
+  justify-content: space-around;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
 }
@@ -243,7 +264,7 @@ li.left_pad {
 }
 
 li.menu {
-  display: inline-flex;
+  display: inline;
   font-size: 0px;
   margin: 0px;
   padding: 0px;
@@ -256,10 +277,38 @@ li.menu:first-child {
 }
 
 header button {
-  font-family: ProtoSans56;
-  font-size: small;
+  font-family: ProtoSans35;
+  font-size: 11pt;
   /*display: table-row;*/
   height: 1.75em;
+  
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+  margin-left: 0em;
+  margin-right: 0em;
+
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 0.0em;
+
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 0em;
+
+  border-style: solid;
+  background-color: black;
+  border-color: yellow;
+  color: yellow;
+}
+
+header button2 {
+  font-family: ProtoSans35;
+  font-size: 11pt;
+  /*display: table-row;*/
+  height: 1.75em;
+  
   width: auto;
 
   /*padding-top: 5px;*/
@@ -294,8 +343,7 @@ header button:hover {
 }
 
 
-div.top_pad {
-  display: block;
+.top_pad {
   padding-top: 0px;  
   border-bottom: 5px;
   border-top: 0px;
@@ -305,8 +353,22 @@ div.top_pad {
   margin-top: 0px;
   border-color: yellow;
   border-style: solid;
-  width: auto;
-  
+width: 600px;
+height: auto;
+display: grid;
+margin: auto;
+}
+
+div.menu div{
+display: inline;
+}
+
+div.menu{
+display: inline-flex;
+justify-content: space-between;
+align-content: start;
+align-items: end;
+flex-wrap: wrap;
 }
 
 header p{
@@ -314,6 +376,7 @@ font-family: 'Univers LT Std', Courier, monospace;
 font-size: 11pt;
 font-weight: 300;
 font-style: italic;
+text-align: center;
 
 margin-bottom: 1em;
 margin-top: 0em;
@@ -321,8 +384,7 @@ margin-top: 0em;
 
 header {
 margin-top: 1.5em;
-text-align: center;
-align-content: center;
+/*text-align: center;*/
 }
 
 div.left_pad {
