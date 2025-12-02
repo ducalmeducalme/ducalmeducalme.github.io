@@ -24,7 +24,7 @@ background: var(--fg-color);
 border: none;
 }
 
-div.article {
+.article {
   font-size: 14pt;
   line-height: 133%;
   border-right-width: 0em;
@@ -47,6 +47,15 @@ div.article {
   margin: auto;
   margin-top: 1rem;
   display: block;
+}
+
+.article a {
+	color: var(--fg-color);
+	text-decoration: none;
+}
+
+.article a:hover {
+	text-decoration: underline;
 }
 
 
